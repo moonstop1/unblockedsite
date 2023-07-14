@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Selection Menu</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #0F0;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+      padding: 100px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    select {
+      padding: 10px;
+      font-size: 18px;
+      background-color: #000;
+      color: #0F0;
+      border: none;
+    }
+
+    select option {
+      background-color: #000;
+      color: #0F0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Select a Game</h1>
+  <select id="gameSelect" onchange="selectGame()">
+    <option value="">-- Select a game --</option>
+    <option value="https://sites.google.com/view/bypass6/2048">2048</option>
+    <option value="https://sites.google.com/view/bypass6/slope-game">Slope Game</option>
+    <option value="https://sites.google.com/view/bypass6/shell-shockers">Shell Shockers</option>
+    <option value="https://sites.google.com/view/bypass6/1v1-lol">1v1.lol</option>
+  </select>
+
+  <script>
+    function selectGame() {
+      var selectedGame = document.getElementById("gameSelect").value;
+      if (selectedGame !== "") {
+        window.open(selectedGame, "_blank");
+      }
+    }
+  </script>
+</body>
+</html>
