@@ -11,41 +11,117 @@
       padding: 100px;
     }
 
-    h1 {
-      font-size: 32px;
-      margin-bottom: 30px;
+    .gameBox {
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      background-color: #000;
+      cursor: pointer;
     }
 
-    select {
-      padding: 10px;
-      font-size: 18px;
-      background-color: #000;
-      color: #0F0;
-      border: none;
-    }
-
-    select option {
-      background-color: #000;
-      color: #0F0;
+    .gameImage {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   </style>
 </head>
 <body>
-  <h1>Select a Game</h1>
-  <select id="gameSelect" onchange="selectGame()">
-    <option value="">-- Select a game --</option>
-    <option value="https://sites.google.com/view/bypass6/2048">2048</option>
-    <option value="https://sites.google.com/view/bypass6/slope-game">Slope Game</option>
-    <option value="https://sites.google.com/view/bypass6/shell-shockers">Shell Shockers</option>
-    <option value="https://sites.google.com/view/bypass6/1v1-lol">1v1.lol</option>
-  </select>
+  <div class="gameBox" onclick="openGame('https://game1.example.com')">
+    <img class="gameImage" src="path/to/game1-image.jpg" alt="Game 1">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game2.example.com')">
+    <img class="gameImage" src="path/to/game2-image.jpg" alt="Game 2">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game3.example.com')">
+    <img class="gameImage" src="path/to/game3-image.jpg" alt="Game 3">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game4.example.com')">
+    <img class="gameImage" src="path/to/game4-image.jpg" alt="Game 4">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game5.example.com')">
+    <img class="gameImage" src="path/to/game5-image.jpg" alt="Game 5">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game6.example.com')">
+    <img class="gameImage" src="path/to/game6-image.jpg" alt="Game 6">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game7.example.com')">
+    <img class="gameImage" src="path/to/game7-image.jpg" alt="Game 7">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game8.example.com')">
+    <img class="gameImage" src="path/to/game8-image.jpg" alt="Game 8">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game9.example.com')">
+    <img class="gameImage" src="path/to/game9-image.jpg" alt="Game 9">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game10.example.com')">
+    <img class="gameImage" src="path/to/game10-image.jpg" alt="Game 10">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game11.example.com')">
+    <img class="gameImage" src="path/to/game11-image.jpg" alt="Game 11">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game12.example.com')">
+    <img class="gameImage" src="path/to/game12-image.jpg" alt="Game 12">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game13.example.com')">
+    <img class="gameImage" src="path/to/game13-image.jpg" alt="Game 13">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game14.example.com')">
+    <img class="gameImage" src="path/to/game14-image.jpg" alt="Game 14">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game15.example.com')">
+    <img class="gameImage" src="path/to/game15-image.jpg" alt="Game 15">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game16.example.com')">
+    <img class="gameImage" src="path/to/game16-image.jpg" alt="Game 16">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game17.example.com')">
+    <img class="gameImage" src="path/to/game17-image.jpg" alt="Game 17">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game18.example.com')">
+    <img class="gameImage" src="path/to/game18-image.jpg" alt="Game 18">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game19.example.com')">
+    <img class="gameImage" src="path/to/game19-image.jpg" alt="Game 19">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game20.example.com')">
+    <img class="gameImage" src="path/to/game20-image.jpg" alt="Game 20">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game21.example.com')">
+    <img class="gameImage" src="path/to/game21-image.jpg" alt="Game 21">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game22.example.com')">
+    <img class="gameImage" src="path/to/game22-image.jpg" alt="Game 22">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game23.example.com')">
+    <img class="gameImage" src="path/to/game23-image.jpg" alt="Game 23">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game24.example.com')">
+    <img class="gameImage" src="path/to/game24-image.jpg" alt="Game 24">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game25.example.com')">
+    <img class="gameImage" src="path/to/game25-image.jpg" alt="Game 25">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game26.example.com')">
+    <img class="gameImage" src="path/to/game26-image.jpg" alt="Game 26">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game27.example.com')">
+    <img class="gameImage" src="path/to/game27-image.jpg" alt="Game 27">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game28.example.com')">
+    <img class="gameImage" src="path/to/game28-image.jpg" alt="Game 28">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game29.example.com')">
+    <img class="gameImage" src="path/to/game29-image.jpg" alt="Game 29">
+  </div>
+  <div class="gameBox" onclick="openGame('https://game30.example.com')">
+    <img class="gameImage" src="path/to/game30-image.jpg" alt="Game 30">
+  </div>
 
   <script>
-    function selectGame() {
-      var selectedGame = document.getElementById("gameSelect").value;
-      if (selectedGame !== "") {
-        window.open(selectedGame, "_blank");
-      }
+    function openGame(gameUrl) {
+      window.open(gameUrl, "_blank");
     }
   </script>
 </body>
