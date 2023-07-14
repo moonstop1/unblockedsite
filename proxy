@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Proxy</title>
+  <style>
+    body {
+      background-color: transparent;
+      color: #0f0;
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .button-78 {
+      align-items: center;
+      appearance: none;
+      background-clip: padding-box;
+      background-color: transparent;
+      background-image: linear-gradient(to bottom, #0a0a0a, #000);
+      border: none;
+      box-sizing: border-box;
+      color: #00ff00;
+      cursor: pointer;
+      display: inline-block;
+      flex-direction: row;
+      flex-shrink: 0;
+      font-family: Eina01, sans-serif;
+      font-size: 16px;
+      font-weight: 800;
+      justify-content: center;
+      line-height: 24px;
+      margin: 0;
+      min-height: 64px;
+      outline: none;
+      overflow: visible;
+      padding: 19px 26px;
+      pointer-events: auto;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      text-transform: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      vertical-align: middle;
+      width: auto;
+      word-break: keep-all;
+      z-index: 0;
+      border-radius: 25px;
+    }
+
+    @media (min-width: 768px) {
+      .button-78 {
+        padding: 19px 32px;
+      }
+    }
+
+    .button-78:before,
+    .button-78:after {
+      border-radius: 25px;
+    }
+
+    .button-78:before {
+      background-image: linear-gradient(92.83deg, #00ff00 0, #00b200 100%);
+      content: "";
+      display: block;
+      height: 100%;
+      left: 0;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -2;
+    }
+
+    .button-78:after {
+      background-color: initial;
+      background-image: linear-gradient(#000, #000);
+      bottom: 4px;
+      content: "";
+      display: block;
+      left: 4px;
+      overflow: hidden;
+      position: absolute;
+      right: 4px;
+      top: 4px;
+      transition: all 100ms ease-out;
+      z-index: -1;
+    }
+
+    .button-78:hover:not(:disabled):before {
+      background: linear-gradient(92.83deg, #00ff00 0, #00b200 100%);
+    }
+
+    .button-78:hover:not(:disabled):after {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      transition-timing-function: ease-in;
+      opacity: 0;
+    }
+
+    .button-78:active:not(:disabled) {
+      color: #333;
+    }
+
+    .button-78:active:not(:disabled):before {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #00ff00 0, #00b200 100%);
+    }
+
+    .button-78:active:not(:disabled):after {
+      background-image: linear-gradient(#000, #000);
+      bottom: 4px;
+      left: 4px;
+      right: 4px;
+      top: 4px;
+    }
+
+    .button-78:disabled {
+      cursor: default;
+      opacity: .24;
+    }
+  </style>
+</head>
+<body>
+  <button class="button-78" onclick="openGame()">Launch (PROXY NAME) #(PROXY LINK #)</button>
+  <script>
+    function openGame() {
+      var win = window.open();
+      var url = "PASTE-LINK-HERE";
+      var iframe = win.document.createElement('iframe');
+      iframe.style.width = "100%";
+      iframe.style.height = "100%";
+      iframe.style.border = "none";
+      iframe.src = url;
+      win.document.body.appendChild(iframe);
+    }
+  </script>
+</body>
+</html>
