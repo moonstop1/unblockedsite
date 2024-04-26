@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Game Selection Menu</title>
+  <title>RUBYRUSH APPS</title>
   <style>
     body {
       background-color: #000;
@@ -28,10 +28,10 @@
   </style>
 </head>
 <body>
-  <div class="gameBox" onclick="openGame('https://game1.example.com')">
+  <div class="gameBox" onclick="openGame('https://www.tiktok.com/en')">
     <img class="gameImage" src="path/to/game1-image.jpg" alt="Game 1">
   </div>
-  <div class="gameBox" onclick="openGame('https://game2.example.com')">
+  <div class="gameBox" onclick="openGame('https://1v1.lol/')">
     <img class="gameImage" src="path/to/game2-image.jpg" alt="Game 2">
   </div>
   <div class="gameBox" onclick="openGame('https://game3.example.com')">
